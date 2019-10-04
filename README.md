@@ -3,7 +3,7 @@ called vanitygen.
 
 There are plenty of quality tools to do this right now already.  So why 
 use vanitygen?  The main reason is that it is fast, more than an order 
-of magnitude faster than the official bitcoin client with the vanity 
+of magnitude faster than the official beyondcoin client with the vanity 
 address patch applied.  This is despite the fact that it runs on the 
 CPU and does not use OpenCL or CUDA.  Vanitygen is also a bit more 
 user-friendly in that it provides feedback on its rate of progress and 
@@ -13,7 +13,7 @@ Vanitygen is written in C, and is provided in source code form and
 pre-built Win32 binaries.  At present, vanitygen can be built on Linux, 
 and requires the openssl and pcre libraries.
 
-Vanitygen can generate regular bitcoin addresses, namecoin addresses, 
+Vanitygen can generate regular beyondcoin addresses, namecoin addresses, 
 and testnet addresses.
 
 Vanitygen can search for exact prefixes or regular expression matches.  
@@ -46,8 +46,8 @@ Pattern: 1Love
 Address: 1LoveRg5t2NCDLUZh6Q8ixv74M5YGVxXaN
 Privkey: 5JLUmjZiirgziDmWmNprPsNx8DYwfecUNk1FQXmDPaoKB36fX1o
 
-Currently, it is difficult to import the private key into bitcoin.  
+Currently, it is difficult to import the private key into beyondcoin.  
 Sipa's showwallet branch has a new command called "importprivkey" that 
 accepts the base-58 encoded private key.  Vanitygen has been tested to 
-work with that version of bitcoin.
+work with that version of beyondcoin.
 
