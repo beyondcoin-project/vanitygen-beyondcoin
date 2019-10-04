@@ -331,7 +331,7 @@ version, name);
 int
 main(int argc, char **argv)
 {
-    int addrtype = 19;              // Beyondcoin
+    int addrtype = 25;              // Beyondcoin
     int scriptaddrtype = 5;
     int privtype = 176;             // Beyondcoin
 	int pubkeytype;
