@@ -51,3 +51,10 @@ Sipa's showwallet branch has a new command called "importprivkey" that
 accepts the base-58 encoded private key.  Vanitygen has been tested to 
 work with that version of beyondcoin.
 
+To fix the build error with libssl, temperoraly install libssl v1.0 to fix this with,
+sudo apt-get install libssl1.0-dev -y
+
+Then, reinstall the latest version of openssl with,
+sudo apt-get install libssl-dev -y
+
+
