@@ -40,9 +40,9 @@ usage(const char *name)
 	fprintf(stderr,
 "oclVanitygen %s (" OPENSSL_VERSION_TEXT ")\n"
 "Usage: %s [-vqrik1NTS] [-d <device>] [-f <filename>|-] [<pattern>...]\n"
-"Generates a bitcoin receiving address matching <pattern>, and outputs the\n"
+"Generates a Beyondcoin receiving address matching <pattern>, and outputs the\n"
 "address and associated private key.  The private key may be stored in a safe\n"
-"location or imported into a bitcoin client to spend any balance received on\n"
+"location or imported into a Beyondcoin client to spend any balance received on\n"
 "the address.\n"
 "By default, <pattern> is interpreted as an exact prefix.\n"
 "By default, if no device is specified, and the system has exactly one OpenCL\n"
@@ -58,7 +58,7 @@ usage(const char *name)
 "-k            Keep pattern and continue search after finding a match\n"
 "-1            Stop after first match\n"
 "-N            Generate namecoin address\n"
-"-T            Generate bitcoin testnet address\n"
+"-T            Generate Beyondcoin testnet address\n"
 "-X <version>  Generate address with the given version\n"
 "-e            Encrypt private keys, prompt for password\n"
 "-E <password> Encrypt private keys with <password> (UNSAFE)\n"
@@ -86,8 +86,8 @@ version, name);
 int
 main(int argc, char **argv)
 {
-	int addrtype = 0;
-	int privtype = 128;
+	int addrtype = 25;
+	int privtype = 176;
 	int regex = 0;
 	int caseinsensitive = 0;
 	int opt;
